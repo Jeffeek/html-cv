@@ -1,6 +1,7 @@
-@font-face {
+@font-face 
+{
     font-family: 'resume-icons';
-    src:  url('/fonts/resume-icons.eot?up73aj');
+    src:  url('./fonts/resume-icons.eot?up73aj');
     src:  url('/fonts/resume-icons.eot?up73aj#iefix') format('embedded-opentype'),
       url('/fonts/resume-icons.ttf?up73aj') format('truetype'),
       url('/fonts/resume-icons.woff?up73aj') format('woff'),
@@ -10,7 +11,8 @@
     font-display: block;
   }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] 
+{
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'resume-icons' !important;
     speak: none;
@@ -25,19 +27,24 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-arrow-down:before {
+  .icon-arrow-down:before 
+  {
     content: "\e900";
   }
-  .icon-arrow-up:before {
+  .icon-arrow-up:before 
+  {
     content: "\e901";
   }
-  .icon-geo-point:before {
+  .icon-geo-point:before 
+  {
     content: "\e902";
   }
-  .icon-mail:before {
+  .icon-mail:before 
+  {
     content: "\e903";
   }
-  .icon-phone:before {
+  .icon-phone:before 
+  {
     content: "\e904";
   }
 
@@ -49,12 +56,11 @@
     border-radius: 100%;
 }
 
-.main-container
+.wrapper
 {
     margin-left: 25%;
     margin-right: 25%;
 }
-
 
 .head-info
 {
@@ -82,25 +88,58 @@
     display: flex;
 }
 
-.icon-arrow-down
+.arrow
 {
-    align-self: flex-end;
-    font-size: 18px;
     vertical-align: middle;
-    margin-left: 2500%;
 }
 
 .glyph 
 {
     font-size: 28px;
-    margin-bottom: 2em;
 }
 
 .drop-down-head
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    padding: 1%;
+    vertical-align: middle;
+}
+
+.btn-blk-wt
+{
+  margin-left: 75%;
+  display: block;
+  background-color:#232c39;
+  color: #ffffff;
+  margin-top: 2em;
+  font-size: medium;
+  min-width: max-content;
+  max-width: max-content;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 3px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+}
+
+.btn-blk-wt:hover
+{
+  background-color: black;
+  border-radius: 5px;
+  border-color: red;
+  -webkit-transform: translateX(-3px);
+  -webkit-transform: scale(1.2);
+}
+
+.drop-down-item
+{
+  background-color: white;
+}
+
+.list > ul
+{
+  list-style-type: disc;
 }
 
 
