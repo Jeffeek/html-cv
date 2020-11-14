@@ -1,0 +1,26 @@
+{
+  "fullName": "Ilyushin Misha",
+  "position": "Junior Developer",
+  "phone": "+375 (29) 644-72-33",
+  "email": "ilyushinmisha@yandex.ru",
+  "sex": "male",
+  "age": 18,
+  "image": "",
+  "sections": 
+  [
+    {
+      "title": "Working experience",
+      "isOpen": false,
+      "items": 
+      [
+        {
+          "title": "title",
+          "subTitle": "subTitle",
+          "from": "from",
+          "to": "to",
+          "items": []
+        }
+      ]
+    }
+  ]
+}
