@@ -33,6 +33,7 @@ function dropHandler(evt)
         console.log(object);
         parseHeader(object);
         parseSections(object);
+        prepareSendButton(object.email, object.sex, object.fullName);
     }
  
     fileReader.onerror = (progressEvent) =>
@@ -50,6 +51,20 @@ function dragoverHandler(evt)
     evt.dataTransfer.dropEffect = 'copy';
 }
 
+function prepareSendButton(email, sex, fullName)
+{
+    let btn = document.getElementById('btnSend');
+    btn.classList.remove('hidden-true');
+    let date = new Date();
+    let targetSex = sex === "male" ? "Уважаемый" : "Уважаемая";
+    let message = `mailto:${email}?subject=Приглашение на собеседование&body=${targetSex} ${fullName}, приглашаем Вас на собеседование в компанию Artezio.\n\n${date.toDateString()}`;
+    console.log(message);
+    btn.onclick = function()
+    {
+        window.location.href = message;
+    }
+}
+
 function parseHeader(profileObject)
 {
     let name = profileObject.fullName;
@@ -58,6 +73,7 @@ function parseHeader(profileObject)
     let email = profileObject.email;
     let sex = profileObject.sex;
     let age = profileObject.age;
+    let image = profileObject.image;
 
     let nameNode = getNameNode();
     nameNode.textContent = name;
@@ -70,7 +86,11 @@ function parseHeader(profileObject)
 
     let emailNode = getEmailNode();
     emailNode.textContent = email;
+
+    let imageNode = getProfileImageNode();
+    imageNode.setAttribute('src', image);
 }
+
 
 function parseSections(profileObject)
 {
@@ -82,6 +102,11 @@ function parseSections(profileObject)
         sectionsWrapper.appendChild(section);
         bindArrows(section);
     }
+}
+
+function getProfileImageNode()
+{
+    return document.getElementById('profile-photo');
 }
 
 function getNameNode()
@@ -130,9 +155,10 @@ function createSection(sectionObject)
     dropDownHead.appendChild(headArrow);
     let list = document.createElement('div');
     list.classList.add('drop-down-list');
-    if (sectionObject.isOpen == false)
+    if (sectionObject.isOpen == true)
     {
-        list.classList.add('hide')
+        list.classList.add('hide');
+        headArrow.classList.add('open');
     }
     for (let i = 0; i < sectionObject.items.length; i++)
     {
@@ -182,11 +208,9 @@ function bindArrows(section)
 {
     let list = section.children.item(0).children.item(1);
     let arrow = section.children.item(0).children.item(0).children.item(1);
-    section.onclick = function(event)
+    section.onclick = async function(event)
     {
-        //тогглим скрытие/раскрытие списка
         list.classList.toggle('hide');
-        //тогглим саму стрелочку
         arrow.classList.toggle('open');
     }  
 }
