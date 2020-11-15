@@ -1,5 +1,5 @@
 {
-  "fullName": "Ilyushin Misha",
+  "fullName": "Ilyushin Mikhail",
   "position": "Junior Developer",
   "phone": "+375 (29) 644-72-33",
   "email": "ilyushinmisha@yandex.ru",
@@ -9,16 +9,60 @@
   "sections": 
   [
     {
-      "title": "Working experience",
+      "title": "SKILLS",
       "isOpen": false,
       "items": 
       [
         {
-          "title": "title",
-          "subTitle": "subTitle",
-          "from": "from",
-          "to": "to",
-          "items": []
+          "title": "C#",
+          "subTitle": "Programming Language",
+          "from": "March 2020",
+          "to": "Today",
+          "items": 
+          [
+            "EF Core",
+            "OOP",
+            "Design Patterns",
+            "ASP.NET Core",
+            "Fundamentals"
+          ]
+        },
+        {
+          "title": "JavaScript",
+          "subTitle": "Programming Language",
+          "from": "June 2020",
+          "to": "Today",
+          "items": 
+          [
+            "Basics"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "EDUCATION",
+      "isOpen": true,
+      "items": 
+      [
+        {
+          "title": "Gymnasium N14",
+          "subTitle": "High leveled on Math and English",
+          "from": "September 2009",
+          "to": "May 2018",
+          "items": 
+          [
+            
+          ]
+        },
+        {
+          "title": "MCB",
+          "subTitle": "Technic-developer",
+          "from": "September 2018",
+          "to": "Today",
+          "items": 
+          [
+            
+          ]
         }
       ]
     }

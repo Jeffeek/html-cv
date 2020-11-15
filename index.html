@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
     <div class="wrapper">
         <div class="head-info">
             <div class="photo">
@@ -35,113 +35,117 @@
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="drop-down">
-                <div class="drop-down-head">
-                    <span>WORK EXPERIENCE</span>
-                    <span class="btn glyph arrow icon-arrow-down"></span>
+        <div id="sections">
+            <div class="section">
+                <div class="drop-down">
+                    <div class="drop-down-head">
+                        <span>WORK EXPERIENCE</span>
+                        <span class="btn glyph arrow icon-arrow-down"></span>
+                    </div>
+                    <div class="drop-down-list">
+                        <div class="drop-down-item">
+
+                        </div>
+                    </div>
                 </div>
-                <div class="drop-down-list">
-                    <div class="drop-down-item">
-                        
+            </div>
+            <div class="section">
+                <div class="drop-down">
+                    <div class="drop-down-head">
+                        <span>EDUCATION</span>
+                        <span class="btn glyph arrow icon-arrow-down" onclick="arrowClick(event)"></span>
+                    </div>
+                    <div class="drop-down-list">
+                        <div class="drop-down-item">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="drop-down">
+                    <div class="drop-down-head">
+                        <span>SKILLS</span>
+                        <span class="btn glyph arrow icon-arrow-up"></span>
+                    </div>
+                    <div class="drop-down-list">
+                        <div class="drop-down-item">
+                            <span class="text-bd-3">C#</span>
+                            <br>
+                            <span class="text-lgt-blue">Programming Language</span>
+                            <br><br>
+                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>JJJJ55555555555555555555</span></li>
+                                <li><span>JJJJ</span></li>
+                            </ul>
+                        </div>
+                        <div class="drop-down-item">
+                            <span class="text-bd-3">C#</span>
+                            <br>
+                            <span class="text-lgt-blue">Programming Language</span>
+                            <br><br>
+                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>JJJJ55555555555555555555</span></li>
+                                <li><span>JJJJ</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="drop-down">
+                    <div class="drop-down-head">
+                        <span>TOOLS</span>
+                        <span class="btn glyph arrow icon-arrow-down"></span>
+                    </div>
+                    <div class="drop-down-list">
+                        <div class="drop-down-item">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>
+                <font size="100px" color="red">ТЕСТ</font>
+            </h1>
+            <div class="section">
+                <div class="drop-down" id="drop-down-test">
+                    <div class="drop-down-head menu">
+                        <span>SKILLS</span>
+                        <span class="btn glyph arrow icon-arrow-up title"></span>
+                    </div>
+                    <div class="drop-down-list">
+                        <div class="drop-down-item">
+                            <span class="text-bd-3">C#</span>
+                            <br>
+                            <span class="text-lgt-blue">Programming Language</span>
+                            <br><br>
+                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>JJJJ55555555555555555555</span></li>
+                                <li><span>JJJJ</span></li>
+                            </ul>
+                        </div>
+                        <div class="drop-down-item">
+                            <span class="text-bd-3">C#</span>
+                            <br>
+                            <span class="text-lgt-blue">Programming Language</span>
+                            <br><br>
+                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>JJJJ55555555555555555555</span></li>
+                                <li><span>JJJJ</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="drop-down">
-                <div class="drop-down-head">
-                    <span>EDUCATION</span>
-                    <span class="btn glyph arrow icon-arrow-down" onclick="arrowClick(event)"></span>
-                </div>
-                <div class="drop-down-list">
-                    <div class="drop-down-item">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="drop-down">
-                <div class="drop-down-head">
-                    <span>SKILLS</span>
-                    <span class="btn glyph arrow icon-arrow-up"></span>
-                </div>
-                <div class="drop-down-list">
-                    <div class="drop-down-item">
-                        <span class="text-bd-3">C#</span>
-                        <br>
-                        <span class="text-lgt-blue">Programming Language</span>
-                        <br><br>
-                        <span class="text-lgt-gray">March 2020 - Today</span>
-                        <ul class="list">
-                            <li><span>JJJJ55555555555555555555</span></li>
-                            <li><span>JJJJ</span></li>
-                        </ul>
-                    </div>
-                    <div class="drop-down-item">
-                        <span class="text-bd-3">C#</span>
-                        <br>
-                        <span class="text-lgt-blue">Programming Language</span>
-                        <br><br>
-                        <span class="text-lgt-gray">March 2020 - Today</span>
-                        <ul class="list">
-                            <li><span>JJJJ55555555555555555555</span></li>
-                            <li><span>JJJJ</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="drop-down">
-                <div class="drop-down-head">
-                    <span>TOOLS</span>
-                    <span class="btn glyph arrow icon-arrow-down"></span>
-                </div>
-                <div class="drop-down-list">
-                    <div class="drop-down-item">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h1><font size="100px" color="red">ТЕСТ</font></h1>
-        <div class="section">
-            <div class="drop-down">
-                <div class="drop-down-head menu" id="sweeties">
-                    <span>SKILLS</span>
-                    <span class="btn glyph arrow icon-arrow-up title"></span>
-                </div>
-                <div class="drop-down-list">
-                    <div class="drop-down-item">
-                        <span class="text-bd-3">C#</span>
-                        <br>
-                        <span class="text-lgt-blue">Programming Language</span>
-                        <br><br>
-                        <span class="text-lgt-gray">March 2020 - Today</span>
-                        <ul class="list">
-                            <li><span>JJJJ55555555555555555555</span></li>
-                            <li><span>JJJJ</span></li>
-                        </ul>
-                    </div>
-                    <div class="drop-down-item">
-                        <span class="text-bd-3">C#</span>
-                        <br>
-                        <span class="text-lgt-blue">Programming Language</span>
-                        <br><br>
-                        <span class="text-lgt-gray">March 2020 - Today</span>
-                        <ul class="list">
-                            <li><span>JJJJ55555555555555555555</span></li>
-                            <li><span>JJJJ</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-blk-wt" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">SEND</button>
+        <button class="btn btn-blk-wt">SEND</button>
     </div>
-    <script src="./js/mainscript.js"></script>
-    <script src="./js/pagescripts.js"></script>
+    <script src="/js/fileloadscript.js"></script>
+    <script src="/js/pagescripts.js"></script>
 </body>
 </html>

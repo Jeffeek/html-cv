@@ -59,11 +59,11 @@
   position: relative;
 }
 
-.head-info {
+#head-info {
   display: flex;
 }
 
-.head-text {
+#head-text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 5%;
@@ -71,7 +71,7 @@
   align-self: center;
 }
 
-.contacts .mar-l-5 {
+#contacts .mar-l-5 {
   margin-left: 5;
 }
 
@@ -159,11 +159,13 @@
 .text-bd-3
 {
   font-weight: 900;
+  display: block;
 }
 
 .text-lgt-blue
 {
   color: #4d6893;
+  display: block;
 }
 
 .text-lgt-gray{
@@ -198,7 +200,7 @@ li span
 
 
 .arrow.open::before {
-  content: '\e900';
+  content: '\e901';
 }
 
 .menu.open ul {
