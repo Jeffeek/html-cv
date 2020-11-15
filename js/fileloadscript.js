@@ -71,8 +71,6 @@ function parseHeader(profileObject)
     let position = profileObject.position;
     let phone = profileObject.phone;
     let email = profileObject.email;
-    let sex = profileObject.sex;
-    let age = profileObject.age;
     let image = profileObject.image;
 
     let nameNode = getNameNode();

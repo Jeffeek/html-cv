@@ -216,3 +216,32 @@ li span
 {
   content: '\e901';
 }
+
+@media screen and (max-device-width: 414px) 
+{
+  .wrapper 
+  {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #profile-photo 
+  {
+    image-rendering: auto;
+    width: 300px;
+    height: 300px;
+  }
+  #head-info
+  {
+    display: block;
+    align-self: center;
+    position: relative;
+    left: 10%;
+    right: 10%;
+  }
+
+  .btn-blk-wt
+  {   
+    height: 5%;
+    left: 33%;
+  }
+ }
