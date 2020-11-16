@@ -212,6 +212,14 @@ li span
   display: none;
 }
 
+.list
+{
+  padding: 0px;
+  padding-left: 4%;
+  display: flex;
+  flex-flow: column;
+}
+
 .arrow.open::before 
 {
   content: '\e901';
@@ -241,7 +249,7 @@ li span
 
   .btn-blk-wt
   {   
-    height: 5%;
+    height: 30px;
     left: 33%;
   }
  }

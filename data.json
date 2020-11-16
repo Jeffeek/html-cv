@@ -21,9 +21,6 @@
           "items": 
           [
             "EF Core",
-            "OOP",
-            "Design Patterns",
-            "ASP.NET Core",
             "Fundamentals"
           ]
         },
@@ -35,6 +32,18 @@
           "items": 
           [
             "Basics"
+          ]
+        },
+        {
+          "title": "Database management",
+          "subTitle": "Database management systems",
+          "from": "March 2020",
+          "to": "Today",
+          "items": 
+          [
+            "MySQL Workbench",
+            "MSSQL Management Studio",
+            "SQLite Browser"
           ]
         }
       ]
@@ -62,6 +71,108 @@
           "items": 
           [
             
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TOOLS",
+      "isOpen": true,
+      "items": 
+      [
+        {
+          "title": "GitHub",
+          "subTitle": "Software version control system",
+          "from": "May 2020",
+          "to": "Today",
+          "items": 
+          [
+            "https://github.com/Jeffeek"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technologies",
+      "isOpen": false,
+      "items": 
+      [
+        {
+          "title": "Entity Framework",
+          "subTitle": "ORM",
+          "from": "July 2020",
+          "to": "Today",
+          "items": 
+          [
+            
+          ]
+        },
+        {
+          "title": "WPF",
+          "subTitle": "Desktop development",
+          "from": "Angust 2020",
+          "to": "Today",
+          "items": 
+          [
+            
+          ]
+        },
+        {
+          "title": "WinForms",
+          "subTitle": "Desktop development",
+          "from": "March 2020",
+          "to": "June 2020",
+          "items": 
+          [
+            
+          ]
+        },
+        {
+          "title": "ASP.NET Core",
+          "subTitle": "Web-software development",
+          "from": "September 2020",
+          "to": "Today",
+          "items": 
+          [
+            
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fundamentals",
+      "isOpen": false,
+      "items": 
+      [
+        {
+          "title": "OOP",
+          "subTitle": "Programming methodology",
+          "from": "December 2019",
+          "to": "Today",
+          "items": 
+          [
+            
+          ]
+        },
+        {
+          "title": "Design Patterns",
+          "subTitle": "Programming methodology",
+          "from": "June 2020",
+          "to": "Today",
+          "items": 
+          [
+            "Strategy",
+            "Abstract Factory",
+            "Builder",
+            "Factory Method",
+            "Prototype",
+            "Singleton",
+            "Adapter",
+            "Facade",
+            "State",
+            "Template Method",
+            "MVC",
+            "MVVM"
           ]
         }
       ]

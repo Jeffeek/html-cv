@@ -206,7 +206,7 @@ function bindArrows(section)
 {
     let list = section.children.item(0).children.item(1);
     let arrow = section.children.item(0).children.item(0).children.item(1);
-    section.onclick = async function(event)
+    section.children.item(0).children.item(0).onclick = function(event)
     {
         list.classList.toggle('hide');
         arrow.classList.toggle('open');
