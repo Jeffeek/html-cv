@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
-<body ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+<body>
     <div class="wrapper">
-        <div class="head-info">
+        <div id="head-info">
             <div class="photo">
-                <img id="profile-photo" src="./img/Без имени-1.png">
+                <img id="profile-photo" alt="profile-photo" src="https://i.ibb.co/YyNmSSb/1.png">
             </div>
-            <div class="head-text">
+            <div id="head-text">
                 <div class="head-name-text">
-                    <span>Mikhail Ilyushin</span>
-                    <h3>JUNIOR DEVELOPER</h3>
+                    <span id="name">Ilyushin Mikhail</span>
+                    <h3 id="position">Junior Developer</h3>
                 </div>
-                <div class="contacts">
+                <div id="contacts">
                     <div class="phone">
                         <span class="icon-phone glyph"></span>
-                        <span class="mar-l-5">+375 (29) 644-72-33</span>
+                        <span class="mg-b-3">+375 (29) 644-72-33</span>
                     </div>
                     <div class="email">
                         <span class="icon-mail glyph"></span>
-                        <span class="mar-l-5">ilyushinmisha@yandex.ru</span>
+                        <span class="mg-b-3">ilyushinmisha@yandex.ru</span>
                     </div>
                     <div class="geopoint">
                         <span class="icon-geo-point glyph"></span>
-                        <span class="mar-l-5">MINSK</span>
+                        <span class="mg-b-3">MINSK</span>
                     </div>
                 </div>
             </div>
@@ -39,12 +37,34 @@
             <div class="section">
                 <div class="drop-down">
                     <div class="drop-down-head">
-                        <span>WORK EXPERIENCE</span>
+                        <span>SKILLS</span>
                         <span class="btn glyph arrow icon-arrow-down"></span>
                     </div>
                     <div class="drop-down-list">
+                        <div class="drop-down-item"><span class="text-bd-3">C#</span>
+                            <span class="text-lgt-blue">Programming Language</span>
+                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>EF Core</span></li>
+                                <li><span>Fundamentals</span></li>
+                            </ul>
+                        </div>
+                        <div class="drop-down-item"><span class="text-bd-3">JavaScript</span>
+                            <span class="text-lgt-blue">Programming Language</span>
+                            <span class="text-lgt-gray">June 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>Basics</span></li>
+                            </ul>
+                        </div>
                         <div class="drop-down-item">
-
+                            <span class="text-bd-3">Database management</span>
+                            <span class="text-lgt-blue">Database management systems</span>
+                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <ul class="list">
+                                <li><span>MySQL Workbench</span></li>
+                                <li><span>MSSQL Management Studio</span></li>
+                                <li><span>SQLite Browser</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -53,42 +73,35 @@
                 <div class="drop-down">
                     <div class="drop-down-head">
                         <span>EDUCATION</span>
-                        <span class="btn glyph arrow icon-arrow-down" onclick="arrowClick(event)"></span>
+                        <span class="btn glyph arrow icon-arrow-down open"></span>
                     </div>
-                    <div class="drop-down-list">
+                    <div class="drop-down-list hide">
                         <div class="drop-down-item">
-
+                            <span class="text-bd-3">Gymnasium N14</span>
+                            <span class="text-lgt-blue">High leveled on Math and English</span>
+                            <span class="text-lgt-gray">September 2009 - May 2018</span>
+                            <ul class="list"></ul>
+                        </div>
+                        <div class="drop-down-item"><span class="text-bd-3">MCB</span><span
+                                class="text-lgt-blue">Technic-developer</span>
+                                <span class="text-lgt-gray">September 2018 - Today</span>
+                            <ul class="list"></ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section">
                 <div class="drop-down">
-                    <div class="drop-down-head">
-                        <span>SKILLS</span>
-                        <span class="btn glyph arrow icon-arrow-up"></span>
+                    <div class="drop-down-head"><span>TOOLS</span>
+                        <span class="btn glyph arrow icon-arrow-down open"></span>
                     </div>
-                    <div class="drop-down-list">
+                    <div class="drop-down-list hide">
                         <div class="drop-down-item">
-                            <span class="text-bd-3">C#</span>
-                            <br>
-                            <span class="text-lgt-blue">Programming Language</span>
-                            <br><br>
-                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <span class="text-bd-3">GitHub</span>
+                            <span class="text-lgt-blue">Software version control system</span>
+                            <span class="text-lgt-gray">May 2020 - Today</span>
                             <ul class="list">
-                                <li><span>JJJJ55555555555555555555</span></li>
-                                <li><span>JJJJ</span></li>
-                            </ul>
-                        </div>
-                        <div class="drop-down-item">
-                            <span class="text-bd-3">C#</span>
-                            <br>
-                            <span class="text-lgt-blue">Programming Language</span>
-                            <br><br>
-                            <span class="text-lgt-gray">March 2020 - Today</span>
-                            <ul class="list">
-                                <li><span>JJJJ55555555555555555555</span></li>
-                                <li><span>JJJJ</span></li>
+                                <li><span>https://github.com/Jeffeek</span></li>
                             </ul>
                         </div>
                     </div>
@@ -96,56 +109,71 @@
             </div>
             <div class="section">
                 <div class="drop-down">
-                    <div class="drop-down-head">
-                        <span>TOOLS</span>
+                    <div class="drop-down-head"><span>TECHNOLOGIES</span>
                         <span class="btn glyph arrow icon-arrow-down"></span>
                     </div>
                     <div class="drop-down-list">
                         <div class="drop-down-item">
-
+                            <span class="text-bd-3">Entity Framework</span>
+                            <span class="text-lgt-blue">ORM</span>
+                            <span class="text-lgt-gray">July 2020 - Today</span>
+                            <ul class="list"></ul>
+                        </div>
+                        <div class="drop-down-item"><span class="text-bd-3">WPF</span>
+                            <span class="text-lgt-blue">Desktop development</span>
+                            <span class="text-lgt-gray">Angust 2020 - Today</span>
+                            <ul class="list"></ul>
+                        </div>
+                        <div class="drop-down-item">
+                            <span class="text-bd-3">WinForms</span>
+                            <span class="text-lgt-blue">Desktop development</span>
+                            <span class="text-lgt-gray">March 2020 - June 2020</span>
+                            <ul class="list"></ul>
+                        </div>
+                        <div class="drop-down-item"><span class="text-bd-3">ASP.NET Core</span>
+                            <span class="text-lgt-blue">Web-software development</span>
+                            <span class="text-lgt-gray">September 2020 - Today</span>
+                            <ul class="list"></ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <h1>
-                <font size="100px" color="red">ТЕСТ</font>
-            </h1>
             <div class="section">
-                <div class="drop-down" id="drop-down-test">
-                    <div class="drop-down-head menu">
-                        <span>SKILLS</span>
-                        <span class="btn glyph arrow icon-arrow-up title"></span>
-                    </div>
+                <div class="drop-down">
+                    <div class="drop-down-head"><span>FUNDAMENTALS</span>
+                        <span class="btn glyph arrow icon-arrow-down"></span></div>
                     <div class="drop-down-list">
                         <div class="drop-down-item">
-                            <span class="text-bd-3">C#</span>
-                            <br>
-                            <span class="text-lgt-blue">Programming Language</span>
-                            <br><br>
-                            <span class="text-lgt-gray">March 2020 - Today</span>
-                            <ul class="list">
-                                <li><span>JJJJ55555555555555555555</span></li>
-                                <li><span>JJJJ</span></li>
-                            </ul>
+                            <span class="text-bd-3">OOP</span>
+                            <span class="text-lgt-blue">Programming methodology</span>
+                            <span class="text-lgt-gray">December 2019 - Today</span>
+                            <ul class="list"></ul>
                         </div>
                         <div class="drop-down-item">
-                            <span class="text-bd-3">C#</span>
-                            <br>
-                            <span class="text-lgt-blue">Programming Language</span>
-                            <br><br>
-                            <span class="text-lgt-gray">March 2020 - Today</span>
+                            <span class="text-bd-3">Design Patterns</span>
+                            <span class="text-lgt-blue">Programming methodology</span>
+                            <span class="text-lgt-gray">June 2020 - Today</span>
                             <ul class="list">
-                                <li><span>JJJJ55555555555555555555</span></li>
-                                <li><span>JJJJ</span></li>
+                                <li><span>Strategy</span></li>
+                                <li><span>Abstract Factory</span></li>
+                                <li><span>Builder</span></li>
+                                <li><span>Factory Method</span></li>
+                                <li><span>Prototype</span></li>
+                                <li><span>Singleton</span></li>
+                                <li><span>Adapter</span></li>
+                                <li><span>Facade</span></li>
+                                <li><span>State</span></li>
+                                <li><span>Template Method</span></li>
+                                <li><span>MVC</span></li>
+                                <li><span>MVVM</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="btn btn-blk-wt">SEND</button>
+        <button class="btn btn-blk-wt" id="btnSend">SEND</button>
     </div>
-    <script src="/js/fileloadscript.js"></script>
-    <script src="/js/pagescripts.js"></script>
+    <script src="./js/pagescripts.js"></script>
 </body>
 </html>

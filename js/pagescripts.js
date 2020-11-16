@@ -1,17 +1,31 @@
-//ищем нужное меню
-let menu = document.getElementById('drop-down-test');
-//находим ноду "головы"
-let head =  menu.getElementsByTagName('div')[0];
-//находим лист всех элементов в списке
-let list = menu.getElementsByTagName('div')[1];
-//находим стрелочку управления
-let arrow = head.getElementsByTagName('span')[1];
 
-//событие на клик по стрелочке
-arrow.onclick = function()
+(function loadSectionsScript()
 {
-    //тогглим скрытие/раскрытие списка
-    list.classList.toggle('hide');
-    //тогглим саму стрелочку
-    arrow.classList.toggle('open');
-};
+    let sections = document.getElementsByClassName('section');
+    for (let i = 0; i < sections.length; i++)
+    {
+        bindArrows(sections[i]);
+    }
+})();
+
+function bindArrows(section)
+{
+    let list = section.children.item(0).children.item(1);
+    let arrow = section.children.item(0).children.item(0).children.item(1);
+    section.children.item(0).children.item(0).onclick = function(event)
+    {
+        list.classList.toggle('hide');
+        arrow.classList.toggle('open');
+    }  
+}
+
+(function bindSendButton()
+{
+    let date = new Date();
+    let btn = document.getElementById('btnSend');
+    let message = `mailto:ilyushin_misha@mail.ru?subject=Приглашение на собеседование&body=Уважаемый Mikhail Ilyushin, приглашаем Вас на собеседование в компанию Artezio.\n\n${date.toDateString()}`;
+    btn.onclick = function()
+    {
+        window.location.href = message;
+    }
+})();
